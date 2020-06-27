@@ -1,16 +1,23 @@
+# vue-textcomplete
+
+## Install
+
+```
+yarn add @aki77/vue-textcomplete
+```
+
+## Usage
+
+```
 <template>
-  <TextComplete
-    :strategies="strategies"
-    :options="{ dropdown: { placement: 'bottom' } }"
-  >
-    <textarea v-model="text" rows="20" :style="{ width: '90%' }"></textarea>
+  <TextComplete :strategies="strategies" :options="options">
+    <textarea v-model="text" rows="20"></textarea>
   </TextComplete>
 </template>
 
 <script lang="ts">
 import Vue from 'vue'
-import { StrategyProps } from '@textcomplete/core'
-import TextComplete from '../TextComplete.vue'
+import TextComplete, { StrategyProps, TextcompleteOption } from '@aki77/vue-textcomplete'
 import { EMOJI_STRATEGY } from './strategy'
 
 type State = {
@@ -18,7 +25,6 @@ type State = {
 }
 
 export default Vue.extend({
-  name: 'VueTextcompleteSample', // vue component name
   components: { TextComplete },
   data(): State {
     return {
@@ -29,10 +35,15 @@ export default Vue.extend({
     strategies(): StrategyProps<[string, string]>[] {
       return [EMOJI_STRATEGY]
     },
+    options(): TextcompleteOption {
+      return {}
+    }
   },
 })
 </script>
 
 <style lang="scss">
-@import '../scss/default';
+@import '@aki77/vue-textcomplete/scss/default';
 </style>
+
+```

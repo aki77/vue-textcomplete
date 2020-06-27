@@ -58,37 +58,3 @@ export default Vue.extend({
   },
 })
 </script>
-
-<style>
-.textcomplete-dropdown {
-  border: 1px solid #ddd;
-  background-color: white;
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  max-height: 300px;
-  overflow-y: scroll;
-}
-.textcomplete-dropdown li {
-  margin: 0;
-}
-.textcomplete-footer,
-.textcomplete-item {
-  border-top: 1px solid #ddd;
-}
-.textcomplete-item {
-  padding: 2px 5px;
-  cursor: pointer;
-}
-
-.textcomplete-item img {
-  height: 1rem;
-  margin-bottom: 0;
-  vertical-align: middle;
-}
-
-.textcomplete-item:hover,
-.textcomplete-item.active {
-  background-color: rgb(110, 183, 219);
-}
-</style>

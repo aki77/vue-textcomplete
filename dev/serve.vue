@@ -1,13 +1,13 @@
 <script lang="ts">
-import Vue from 'vue';
-import { VueTextcompleteSample } from '@/entry';
+import Vue from 'vue'
+import { VueTextcompleteSample } from '@/lib-components'
 
 export default Vue.extend({
   name: 'ServeDev',
   components: {
     VueTextcompleteSample,
-  }
-});
+  },
+})
 </script>
 
 <template>
