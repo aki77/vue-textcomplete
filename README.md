@@ -47,3 +47,7 @@ export default Vue.extend({
 </style>
 
 ```
+
+## Thanks
+
+- [yuku/textcomplete: Autocomplete for HTMLTextAreaElement and more\.](https://github.com/yuku/textcomplete)
