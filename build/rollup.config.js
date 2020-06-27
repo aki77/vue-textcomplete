@@ -77,7 +77,7 @@ if (!argv.format || argv.format === 'es') {
     ...baseConfig,
     external,
     output: {
-      file: 'dist/bootstrap-toast-vue.esm.js',
+      file: 'dist/vue-textcomplete.esm.js',
       format: 'esm',
       exports: 'named',
     },
@@ -111,7 +111,7 @@ if (!argv.format || argv.format === 'cjs') {
     external,
     output: {
       compact: true,
-      file: 'dist/bootstrap-toast-vue.ssr.js',
+      file: 'dist/vue-textcomplete.ssr.js',
       format: 'cjs',
       name: 'BootstrapToastVue',
       exports: 'named',
@@ -140,7 +140,7 @@ if (!argv.format || argv.format === 'iife') {
     external,
     output: {
       compact: true,
-      file: 'dist/bootstrap-toast-vue.min.js',
+      file: 'dist/vue-textcomplete.min.js',
       format: 'iife',
       name: 'BootstrapToastVue',
       exports: 'named',
